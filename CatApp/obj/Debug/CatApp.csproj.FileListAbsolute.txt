@@ -1,0 +1,16 @@
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\CatApp.exe.config
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\CatApp.exe
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\CatApp.pdb
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.csproj.AssemblyReference.cache
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.Form1.resources
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.Properties.Resources.resources
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.csproj.GenerateResource.cache
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.csproj.CoreCompileInputs.cache
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.exe
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.pdb
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\RestSharp.dll
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\adele\source\repos\CatApp\CatApp\bin\Debug\RestSharp.xml
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.csproj.CopyComplete
+C:\Users\adele\source\repos\CatApp\CatApp\obj\Debug\CatApp.Form2.resources
