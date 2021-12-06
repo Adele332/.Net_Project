@@ -30,22 +30,19 @@ namespace CatApp
             {
                 var provider = new RestApi();
                 var info = provider.GetAboutBreed(Search);
+                listView1.Items.Clear();
 
-                if (info != null)
+                if (info.Count != 0 )
                 {
-                    
                     foreach (var i in info)
                     {
-                        textBox2.Text = i.name;
-                        textBox3.Text = i.alt_names;
-                        textBox4.Text = i.origin;
-                        textBox5.Text = i.temperament;
-                        textBox6.Text = i.description;
+                        var item = new ListViewItem(new[] { i.name });
+                        listView1.Items.Add(item);
                     }
                 }
                 else MessageBox.Show("There's no cat breed with specified letters!");
             }
-            else MessageBox.Show("Bad input!");
+            else MessageBox.Show("Bad input! 3 letters only!");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,6 +51,26 @@ namespace CatApp
             Form2 main = new Form2();
             main.ShowDialog();
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count > 0)
+            {
+                var provider = new RestApi();
+                var SelectedItem = listView1.SelectedItems[0].Text;
+                var info = provider.GetAboutBreed(SelectedItem);
+
+                foreach (var i in info)
+                {
+                    textBox2.Text = i.name;
+                    textBox3.Text = i.alt_names;
+                    textBox4.Text = i.origin;
+                    textBox5.Text = i.temperament;
+                    textBox6.Text = i.description;
+                }
+            }
+            else MessageBox.Show("Please, select full name of breed from the list.");
         }
     }
 }
