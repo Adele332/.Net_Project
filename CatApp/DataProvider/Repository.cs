@@ -17,8 +17,8 @@ namespace CatApp.DataProvider
 
         public int CountResults(string search)
         {
-            return m_provider.GetAboutBreed(search).
-                Where(o => o.name.StartsWith(search)).Count();
+            return m_provider.GetAboutBreed(search).Count();
+                //Where(o => o.name.Contains(search)).Count();
 
         }
     }

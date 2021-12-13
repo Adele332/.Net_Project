@@ -15,16 +15,15 @@ namespace MoqTests
             var provider = new Mock<ICatDataProvider>(MockBehavior.Strict);
             var repo = new Repository(provider.Object);
 
-            provider.Setup(m => m.GetAboutBreed("ben")).Returns(new List<AboutBreedModel>
+            provider.Setup(m => m.GetAboutBreed("ameri")).Returns(new List<AboutBreedModel>
             {
-                    new AboutBreedModel {id = "beng", name = "bengal", alt_names = "Bengal", 
-                        origin = "United States", temperament = "Energetic, Demanding, Intelligent"},
-                    new AboutBreedModel {id = "sing", name = "singapura", alt_names = "non",
-                        origin = "United States", temperament = "Alert, Agile, Curious",
-                        description = "The Singapura is usually..."},
+                    new AboutBreedModel {id = "abob", name = "American Bobtail"},
+                    new AboutBreedModel {id = "acur", name = "American Curl"},
+                    new AboutBreedModel {id = "asho", name = "American Shorthair"},
+                    new AboutBreedModel {id = "awir", name = "American Wirehair"},
 
             });
-            Assert.AreEqual(1, repo.CountResults("ben"));
+            Assert.AreEqual(4, repo.CountResults("ameri"));
         }
     }
 }
